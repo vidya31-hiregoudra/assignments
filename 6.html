@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #container{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-right: 20px;
+    }
+    #container>div{
+        height: 100px;
+        width: 30%;
+        border: 1px solid black;
+        margin: 10px;
+    }
+    #container>div>div{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+    }
+     div > p:nth-child(2) 
+     {
+        color: brown;
+        font-weight: bold;
+    }
+     div> p:nth-child(2)~div
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+     }
+     li:nth-child(odd){
+        display: flex;
+        justify-content: space-between;
+        padding: 1opx;
+     }
+   </style>
+    <body>
+    <div id="container">
+    <div>
+        <div>
+            <p>Cappuccino</p>
+            <p>$49</p>
+
+        </div>
+    </div>
+    <div>
+        <p>Americano</p>
+        <p>$49</p>
+    </div>
+    <div>
+        <p>Espresso</p>
+        <p>$49</p>
+    </div>
+    <div>
+        <p>Macchiato</p>
+        <p>$49</p>
+    </div>
+    <div>
+        <p>Mocha</p>
+        <p>$49</p>
+    </div>
+    <div>
+        <p>Coffee Latte</p>
+        <p>$49</p>
+    </div>
+    <div>
+        <p>Piccolo Latte</p>
+        <p>$49</p>
+    </div>
+    <div>
+        <p>Ristretto</p>
+        <p>$49</p>
+    </div>
+    <div>
+        <p>Affogato</p>
+        <p>$49</p>
+    </div>
+        
+        
+    </div>
+</body>
+</html>

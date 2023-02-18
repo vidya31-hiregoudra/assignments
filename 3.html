@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .linus {
+            height: 310px;
+            width: 400px;
+            border: 1px solid transparent;
+            margin: auto;
+            background-color: bisque;
+        }
+
+        .Salkhan {
+            height: 200px;
+            width: 700px;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+        }
+
+        #kenthompson {
+            height: 200px;
+            width: 900px;
+            border: 1px solid transparent;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+            background-color: orangered;
+        }
+
+        .linusimage {
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        .tc {
+            text-align: center;
+        }
+
+        .Salkhanimage {
+            height: 200px;
+            width: 150px;
+            border: 1px solid teal;
+            margin-top: 20px;
+            margin: auto;
+        }
+
+        .saldes {
+            height: 200px;
+            width: 800px;
+            margin-left: 20px;
+        }
+
+        .salname {
+            color: red;
+        }
+
+        .box1 {
+            height: 200px;
+            width: 900px;
+            border: 1px solid transparent;
+            text-align: left;
+        }
+
+        #box2 {
+            height: 180px;
+            width: 15px;
+            color: aquamarine;
+            background-color: black;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+
+        .box3 {
+            height: 200px;
+            width: 400px;
+            border: 1px solid transparent;
+            margin-left: 40px;
+        }
+
+        h1 {
+            color: whitesmoke;
+        }
+
+        p1 {
+            text-align: left;
+        }
+
+        p2 {
+            text-align: right;
+        }
+        #b1{
+            width: 90%;
+            height:150px;
+            margin: auto;
+            background-color: orangered;
+             border: 1px solid black;
+            display: flex ;
+            margin-top: 20px;
+    
+        }
+        .b2{
+            text-align: left;
+            width:40%;
+        margin-right: -6%;
+            
+        }
+        .b3{
+
+            text-align: left;
+            width:100%;
+            margin-left:40%;
+
+            /* padding-left:0px; */
+        }
+        .b4{
+        background-color: black;
+            width:8px;
+            height:80%;
+            border: 1px solid black;
+            margin: 15px 30px;
+            /* margin-right: 20px; */
+        }
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="linus">
+        <div class="linusimage">
+            <img height="200px" width="200px"
+                src="data:image/jpeg;base64,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"
+                alt="">
+            <h2 class="tc">Linus Torvalds</h2>
+            <h6 class="tc">The creator Theolinux & Gitf</h6>
+        </div>
+    </div>
+    <div class="Salkhan">
+        <div class="salkhanimage">
+            <img height="200px" width="150px"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiKIrd39rbZWTQIvx4FObL2WNQa2FznBCcRw&usqp=CAU"
+                alt="">
+        </div>
+        <div class="saldes">
+            <h1 class="salname">Sal Khan</h1>
+            <p> Salman khan is the founder of the khan academy which has a mission of providing a free world-class
+                education for anyone,anywhere</p>
+        </div>
+    </div>
+    <!-- <div class="box"> -->
+        <!-- <div id="kenthompson">
+            <div class="box1">
+                <h1>Ken Thompson</h1>
+                <p1>Designed and implemented the original unix operating system</p1>
+            </div>
+            <div id="box2">
+                <div class="box3">
+                    <h1>Dennis Ritchie</h1>
+                    <p2>The creator of C Programming Language</p2>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div id="b1">
+        <div class="b2">
+            <h1>Ken Thompson</h1>
+            <p1>Designed and implemented the original unix operating system</p1>
+        </div>
+        <div class="b4">
+            <div></div>
+        </div>
+        <div>
+            <div class="b3">
+                <h1>Dennis Ritchie</h1>
+                <p2>The creator of C Programming Language</p2>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

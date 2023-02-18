@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            grid-template-columns: repeat(12,100px);
+            grid-template-rows: repeat(3, 100px);
+            display:grid;
+            grid-gap: 10px;
+            justify-content: center;
+            align-content: center;
+            grid-template-areas: 
+             "a a a b b b b b b c c c"
+             "d d d d d d e e e f f f"
+             "g g g h h h i i i i i i";
+
+        }
+        .container>div{
+            background-color: teal;
+            border-radius: 10px;
+
+        }
+        .container>div:nth-last-child(1){
+            grid-area: a;
+        }
+        .container>div:nth-last-child(2){
+            grid-area: b;
+        }
+        .container>div:nth-last-child(3){
+            grid-area: c;
+        }
+        .container>div:nth-last-child(4){
+            grid-area: d;
+        }
+        .container>div:nth-last-child(5){
+            grid-area: e;
+        }
+        .container>div:nth-last-child(6){
+            grid-area: f;
+        }
+        .container>div:nth-last-child(7){
+            grid-area: g;
+        }
+        .container>div:nth-last-child(8){
+            grid-area: h;
+        }
+        .container>div:nth-last-child(9){
+            grid-area: i;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="1"></div>
+        <div class="2"></div>
+        <div class="3"></div>
+        <div class="4"></div>
+        <div class="5"></div>
+        <div class="6"></div>
+        <div class="7"></div>
+        <div class="8"></div>
+        <div class="9"></div>
+    </div>
+</body>
+</html>

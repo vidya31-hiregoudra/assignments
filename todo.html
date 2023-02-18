@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form >
+    <h2>ToDo List</h2>
+   <h5>Name<input type="Name" placeholder="Enter todo"></h5> 
+    <h5>Quality<input type="Quantity" placeholder="Enter quality"></h5>
+    <h5>Priority<select name="Priority" id="values"></h5>
+    <option value="">--</option>  
+        <option value="L">low</option>
+        <option value="M">medium</option>
+        <option value="H">high</option>
+    </select>
+    <button id="sub">Submit</button>
+</form>
+<table>
+    <tr>
+        <th>name</th>
+        <th>quality</th>
+        <th>priority</th>
+        <th>delete</th>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",myFun);
+    function myFun(event){
+        console.log(event);  
+    };
+    document.querySelector("delete").addEventListener("delete",fun);
+    function fun(event){
+        console.log(event)
+    };
+    
+
+
+</script>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            grid-template-rows: repeat(3,100px);
+            grid-template-columns: repeat(12,50px);
+            display: grid;
+            grid-gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+            grid-template-areas: 
+           "v v v v v v v v v v v v"
+           "g g g g g r r r r r r r"
+           "p p p p p p p p p p p p";
+
+        }
+         .container>div{
+            border-radius: 10px;
+            
+        }
+        .v{
+            background-color: red;
+            grid-area: v;
+        }
+        .g{
+            background-color: greenyellow;
+            grid-area: g;
+            height: 100px;
+        }
+        .r{
+            background-color: teal;
+            grid-area: r;
+        }
+        .p{
+            background-color: black;
+            grid-area: p;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="v"></div>
+        <div class="g"></div>
+        <div class="r"></div>
+        <div class="p"></div>
+    </div>
+</body>
+</html>

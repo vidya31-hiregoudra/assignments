@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="m" type="number" placeholder="enter the birth year">
+	 <select name="name" id="gender">
+        <option value="">--</option>  
+        <option value="male">M</option> 
+     <option value="female">F</option> 
+     </select>
+     
+    <!-- <input type="text" placeholder="enter the birth year"> -->
+    <button onClick="vad">submit</button>
+     <!-- <button onClick="showGender()">GENDER</button>  -->
+
+</body>
+</html>
+<script>
+    function showGender(){
+ document.getElementById("gender").value;
+    }
+    function vad(){
+   var year= document.querySelector("#m").value =num; 
+        if(num<=2000){
+alert("you are allowed to marry");
+    
+  }
+  else {
+    alert("you are not allowed to marry");
+  }
+    }
+   
+</script>
